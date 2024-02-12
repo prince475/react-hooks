@@ -70,4 +70,23 @@ React state can be added to a component using two hooks:
 ### useState Hook
 
 This hook allows you as a developer to add a state variable to your components.
+useState can be referred to as component specific memory used to update the application components when a user has interaction with the UI.
+For example, when updating an input field when a user types into a form field.
+
+The challenge encountered to make one consider using useState:
+
+1. Local variables do not persist between renders
+2. Changes to local variables won't trigger renders
+
+```txt
+    When updating a component with new data in react, you need to account for two things:
+     - To attain an effective update data must be retained between renders and
+     - A trigger action must be set to render the component with new data which 
+       in other terms is called re-rendering. 
+```
+
+Therefore, the `useState` hook is used to as a remedy to this problem as:
+
+- It allows a state variable to retain the data between renders.
+- a function called a state setter function which updates the variable and triggers react to re-render the component.
 
