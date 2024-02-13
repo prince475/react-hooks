@@ -90,3 +90,6 @@ Therefore, the `useState` hook is used to as a remedy to this problem as:
 - It allows a state variable to retain the data between renders.
 - a function called a state setter function which updates the variable and triggers react to re-render the component.
 
+### The process of adding a state variable to your react component.
+
+
