@@ -59,9 +59,10 @@ React state can be added to a component using two hooks:
 
     - useReducer: Declares a state variable with the update logic inside a reducer function.
 ```
+
+`Below is an example of how useState is used in react. Here state is used to store the selected image index`
+
 ```js
-    // an example of how is used in react
-    // Here state used to store the selected image index
     function ImageGallery() {
     const [index, setIndex] = useState(0);
     }
