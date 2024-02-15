@@ -93,4 +93,19 @@ Therefore, the `useState` hook is used to as a remedy to this problem as:
 
 ### The process of adding a state variable to your react component.
 
+- Import `useState` from React at the top level of your component.
+
+    ```js
+        import { useState } from 'react';
+    ```
+
+- Then write your state variable and like in our case:
+
+    ```js
+        const [index, setIndex] = useState(0);
+    ```
+
+- `index` is a state variable while `setIndex` is the setter function.
+
+- `The curly braces syntax is called array destructuring which allows the developer to read values from an array.`
 
