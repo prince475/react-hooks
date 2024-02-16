@@ -115,4 +115,42 @@ Let's consider we have a list of images and their descriptions that we are displ
 
 - We would like to have a button `Next` which when clicked loads the next image and its description.
 
+- Sample code of this example is as below:
+
+```js
+    import { useState } from 'react';
+    import { imageList } from './data.js';
+
+    export default function Gallery() {
+        const[index, setIndex] = useState(0);
+
+        function handleClick() {
+            setIndex(index + 1);
+        }
+
+        let image = imageList[index];
+
+        return(
+            <>
+                <button onClick={handleClick}>
+                    Next
+                </button>
+                <h2>
+                    <i>{image.name}</i>
+                    by {image.artist}
+                </h2>
+                <h3>
+                    ({index + 1} of {imageList.length})
+                </h3>
+                <img
+                    src={image.url}
+                    alt={sculpture.alt}
+                />
+                <p>
+                    {image.description}
+                </p>
+            </>
+        )
+    }
+```
 
