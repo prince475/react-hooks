@@ -109,13 +109,14 @@ Therefore, the `useState` hook is used to as a remedy to this problem as:
 
 - `The curly braces syntax is called array destructuring which allows the developer to read values from an array.`
 
-### Case Example: Moving Images in a Gallery 
+### `useState` Use Case Example: Moving Images in a Gallery 
 
-Let's consider we have a list of images and their descriptions that we are displaying on a scree.
+Let's consider, we have a list of images (name, artist, and description), that we are displaying in the gallery 
+screen of our application.
 
-- We would like to have a button `Next` which when clicked loads the next image and its description.
+- We would like to have a button `Next` which when clicked loads the next image and its corresponding details.
 
-- Sample code of this example is as below:
+- Sample execution code of this example look like:
 
 ```js
     import { useState } from 'react';
