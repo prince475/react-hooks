@@ -109,3 +109,10 @@ Therefore, the `useState` hook is used to as a remedy to this problem as:
 
 - `The curly braces syntax is called array destructuring which allows the developer to read values from an array.`
 
+### Moving Images in a Gallery Example
+
+Let's consider we have a list of images and their descriptions that we are displaying on a scree.
+
+- We would like to have a button `Next` which when clicked loads the next image and its description.
+
+
