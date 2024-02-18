@@ -156,7 +156,7 @@ screen of our application.
 ```
 ### How useState Works
 
-When you `useState` is called, essentially you are commincating with React React telling it you want your component where the function is being called that you want it to remember a certain thing.
+When `useState` is called, essentially you are commincating with React and telling it you want the component where the function is being called to remember a certain thing.
 In our case: we would like React to remember `index`. 
 
 ```js
