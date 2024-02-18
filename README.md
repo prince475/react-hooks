@@ -154,4 +154,18 @@ screen of our application.
         )
     }
 ```
+### How useState Works
+
+When you `useState` is called, essentially you are commincating with React React telling it you want your component where the function is being called that you want it to remember a certain thing.
+In our case: we would like React to remember `index`. 
+
+```js
+    const [index setIndex] = useState(0);
+```  
+
+In our example`useState` takes only one argument which is the initial value of the state variable and that value is set to 0 with useState(0). 
+During our component re-render,`useState` provides us with an array containing two values namely:
+
+- The state variable (`index`) with the vaule stored initially
+- A state setter function (`setIndex`) that can update the state variable and trigger React to render the component again.  
 
