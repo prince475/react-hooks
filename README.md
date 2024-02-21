@@ -173,3 +173,5 @@ During our component re-render,`useState` provides us with an array containing t
     triggers another render.
   - Your component’s second render. React still sees useState(0), but because React remembers that you set index to 1, it returns [1, setIndex] instead.         
 
+Giving a component multiple state variables 
+You can have as many state variables of as many types as you like in one component. This component has two state variables, a number index and a boolean showMore that’s toggled when you click “Show details”:
