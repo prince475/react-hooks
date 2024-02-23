@@ -168,12 +168,12 @@ During our component re-render,`useState` provides us with an array containing t
 
 - The state variable (`index`) with the vaule stored initially
 - A state setter function (`setIndex`) that can update the state variable and trigger React to render the component again.
-  - Your component renders the first time. Because you passed 0 to useState as the initial value for index, it will return [0, setIndex]. React remembers 0 is the latest     state value.
-  - You update the state. When a user clicks the button, it calls setIndex(index + 1). index is 0, so it’s setIndex(1). This tells React to remember index is 1 now and 
-    triggers another render.
-  - Your component’s second render. React still sees useState(0), but because React remembers that you set index to 1, it returns [1, setIndex] instead.         
+  - Our component renders the first time. Because we passed 0 to useState as the initial value for index, it will return [0, setIndex]. React remembers 0 is the latest     state value.
+  - State updates: When a user clicks the button, it calls setIndex(index + 1). index is 0, so it’s setIndex(1). This tells React to remember index is 1 now and triggers another render. 
+- React still sees useState(0), but because React remembers that you set index to 1, it returns [1, setIndex] instead.         
 
 Giving a component multiple state variables 
-You can have as many state variables of as many types as you like in one component. This component has two state variables, a number index and a boolean showMore that’s toggled when you click “Show details”:
+In React your application can have as many state variables of as many types as you like in one component. This component has two state variables, a number index and a boolean showMore that’s toggled when you click “Show details”:
 
-It is a good idea to have multiple state variables if their state is unrelated, like index and showMore in this example. But if you find that you often change two state variables together, it might be easier to combine them into one. For example, if you have a form with many fields, it’s more convenient to have a single state variable that holds an object than state variable per field.
+It is always a good idea to have multiple state variables if their state is unrelated, like index and showMore in this example. 
+But if you find that you often change two state variables together, it might be easier to combine them into one. For example, if you have a form with many fields, it’s more convenient to have a single state variable that holds an object than state variable per field.
