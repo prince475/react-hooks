@@ -170,7 +170,9 @@ During our component re-render,`useState` provides us with an array containing t
 - A state setter function (`setIndex`) that can update the state variable and trigger React to render the component again.
   - Our component renders the first time. Because we passed 0 to useState as the initial value for index, it will return [0, setIndex]. React remembers 0 is the latest     state value.
   - State updates: When a user clicks the button, it calls setIndex(index + 1). index is 0, so it’s setIndex(1). This tells React to remember index is 1 now and triggers another render. 
-  - React still sees useState(0), but because React remembers that you set index to 1, it returns [1, setIndex] instead.         
+  - React still sees useState(0), but because React remembers that you set index to 1, it returns [1, setIndex] instead.  
+
+### Multiple State Variables     
 
 Giving a component multiple state variables 
 In React your application can have as many state variables of as many types as you like in one component. This component has two state variables, a number index and a boolean showMore that’s toggled when you click “Show details”:
