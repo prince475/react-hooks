@@ -184,7 +184,7 @@ But if you find that you often change two state variables together, it might be 
 
 What we have learn't so far
 ```txt
-    - Use a state variable when a component needs to `remember` some information between renders.
+    - Use a state variable when a component needs to "remember" some information between renders.
     - State variables are declared by calling the useState Hook.
     - Hooks are special functions that start with use. They let you “hook into” React features like state.
     - Hooks might remind you of imports: they need to be called unconditionally. Calling Hooks, including useState, 
