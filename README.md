@@ -175,14 +175,16 @@ During our component re-render,`useState` provides us with an array containing t
 ### Multiple State Variables     
 
 Giving a component multiple state variables. 
-In React an application can have as many state variables of as many types as you like in one component. This component has two state variables, a number index and a boolean showMore that’s toggled when you click “Show details”:
+In React an application can have as many state variables of as many types as you like in one component. 
+This component has two state variables, a number index and a boolean showMore that’s toggled when you click “Show details”:
 
 It is always a good idea to have multiple state variables if their state is unrelated, like index and showMore in this example. 
+
 But if you find that you often change two state variables together, it might be easier to combine them into one. For example, if you have a form with many fields, it’s more convenient to have a single state variable that holds an object than state variable per field.
 
 What we have learn't so far
 ```txt
-    - Use a state variable when a component needs to “remember” some information between renders.
+    - Use a state variable when a component needs to `remember` some information between renders.
     - State variables are declared by calling the useState Hook.
     - Hooks are special functions that start with use. They let you “hook into” React features like state.
     - Hooks might remind you of imports: they need to be called unconditionally. Calling Hooks, including useState, 
