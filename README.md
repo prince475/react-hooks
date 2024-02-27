@@ -193,3 +193,5 @@ What we have learn't so far
     - You can have more than one state variable. Internally, React matches them up by their order.
     - State is private to the component. If you render it in two places, each copy gets its own state.
 ```
+
+### More examples on useState
