@@ -1,4 +1,4 @@
-# React Hooks
+9# React Hooks
 
 Hooks are one of the programmatic react features. They are used to access different React features from your component.
 This concept is also extended to React Dom where the React-dom contains specific Hooks for web application which run the browser DOM environment.
@@ -182,7 +182,7 @@ It is always a good idea to have multiple state variables if their state is unre
 
 But if you find that you often change two state variables together, it might be easier to combine them into one. For example, if you have a form with many fields, it’s more convenient to have a single state variable that holds an object than state variable per field.
 
-What we have learn't so far
+Key learning points so far
 ```txt
     - Use a state variable when a component needs to "remember" some information between renders.
     - State variables are declared by calling the useState Hook.
