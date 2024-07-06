@@ -1,4 +1,4 @@
-9# React Hooks
+# React Hooks
 
 Hooks are one of the programmatic react features. They are used to access different React features from your component.
 This concept is also extended to React Dom where the React-dom contains specific Hooks for web application which run the browser DOM environment.
