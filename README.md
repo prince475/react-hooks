@@ -20,7 +20,7 @@ There are of two different types:
 1. Built-in React Hooks
 2. Custom React Hooks
 
-## Built-in React Hooks
+## 'built-in' React Hooks
 
 The built-in React Hooks can be categorized further by the different parts of the application they access as well as the use case.
 Build-in React Hooks Categories are:
